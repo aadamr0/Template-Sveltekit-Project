@@ -1,0 +1,17 @@
+/* Connected to the root +layout.svelte file. This globals.css file should contain all global styles and variables */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#app,
+main {
+    height: 100%;
+}
+
+html {
+    overflow: clip;
+}
