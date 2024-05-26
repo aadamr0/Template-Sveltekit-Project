@@ -1,33 +1,42 @@
 <script lang="ts">
+	// Global styles
 	import '../styles/globals.css';
 
+	// Components
 	import Navbar from '../components/Navbar.svelte';
 	import MobileMenu from '../components/MobileMenu.svelte';
 	import Content from '../components/Content.svelte';
 
+	// Get data
 	export let data;
 </script>
 
+<!-- APP LAYOUT -->
 <div id="app">
-	<div id="navbar-div"><Navbar /></div>
-	<div id="mobile-menu-div"><MobileMenu /></div>
+	<!-- NAVBAR OR MOBILE MENU (navigation) -->
+	<Navbar />
+	<MobileMenu />
+
+	<!-- REST OF CONTENT -->
 	<Content currentUrl={data.url}>
 		<slot />
 	</Content>
 </div>
 
 <style>
-	/* MOBILE  */
+	/* MOBILE */
 	@media only screen and (max-width: 6.9in) {
-		#navbar-div {
-			display: none;
+		#app {
+			display: grid;
+			grid-template-rows: 10% auto;
 		}
 	}
 
 	/* DESKTOP */
 	@media only screen and (min-width: 6.9in) {
-		#mobile-menu-div {
-			display: none;
+		#app {
+			display: grid;
+			grid-template-rows: 10% auto;
 		}
 	}
 </style>
