@@ -3,22 +3,21 @@
 	import '../styles/globals.css';
 
 	// Components
+	import PageTransitioner from '../components/PageTransitioner.svelte';
 	import Navbar from '../components/Navbar.svelte';
 	import MobileMenu from '../components/MobileMenu.svelte';
 	import Content from '../components/Content.svelte';
-
-	// Get data
-	export let data;
 </script>
 
 <!-- APP LAYOUT -->
 <div id="app">
+	<!-- PAGE TRANSITIONER -->
+	<PageTransitioner />
 	<!-- NAVBAR OR MOBILE MENU (navigation) -->
 	<Navbar />
 	<MobileMenu />
-
 	<!-- REST OF CONTENT -->
-	<Content currentUrl={data.url}>
+	<Content>
 		<slot />
 	</Content>
 </div>

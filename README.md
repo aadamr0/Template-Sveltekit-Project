@@ -19,3 +19,7 @@ Ready to be written in src/routes with pages & layouts as normal.
 # Deployment
 
 See deloyment and adapter options [here](https://kit.svelte.dev/docs/adapters)
+
+# Navigation explained
+
+Page transition function takes URL, manually changes opacity of TransitionScreen Component (literally a screen), and manually changes the url. Need custom functions to replace normal behaviour of anchors etc. Can pass colours to change colour of transition screen.
