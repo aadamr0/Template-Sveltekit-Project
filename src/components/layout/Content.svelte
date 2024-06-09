@@ -1,7 +1,6 @@
 <script lang="ts">
 	// Import component and animation
-	import Footer from './Footer.svelte';
-	
+	import Footer from '../layout/Footer.svelte';
 </script>
 
 <!-- CONTENT -->
@@ -20,6 +19,8 @@
 			overflow: scroll;
 			display: grid;
 			grid-template-rows: 1fr auto;
+			background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+			background-color: #333333;
 		}
 	}
 

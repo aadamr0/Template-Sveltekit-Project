@@ -3,10 +3,10 @@
 	import '../styles/globals.css';
 
 	// Components
-	import PageTransitioner from '../components/PageTransitioner.svelte';
-	import Navbar from '../components/Navbar.svelte';
-	import MobileMenu from '../components/MobileMenu.svelte';
-	import Content from '../components/Content.svelte';
+	import PageTransitioner from '../components/layout/PageTransitioner.svelte';
+	import Navbar from '../components/layout/Navbar.svelte';
+	import MobileMenu from '../components/layout/MobileMenu.svelte';
+	import Content from '../components/layout/Content.svelte';
 </script>
 
 <!-- APP LAYOUT -->
@@ -27,7 +27,7 @@
 	@media only screen and (max-width: 6.9in) {
 		#app {
 			display: grid;
-			grid-template-rows: 10% auto;
+			grid-template-rows: 10vh auto;
 		}
 	}
 
@@ -35,7 +35,7 @@
 	@media only screen and (min-width: 6.9in) {
 		#app {
 			display: grid;
-			grid-template-rows: 10% auto;
+			grid-template-rows: 10vh auto;
 		}
 	}
 </style>

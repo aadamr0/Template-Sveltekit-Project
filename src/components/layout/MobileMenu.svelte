@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { anchor } from '$lib/utils';
+
 	// Components
 	import NavScreen from './NavScreen.svelte';
 
@@ -9,12 +11,12 @@
 
 <!-- MOBILE header -->
 <div id="mobile-menu-div">
-	<a href="/" class="logo-a">Home</a>
+	<a href="/" on:click={anchor} class="logo-a">Home</a>
 	<button on:click={toggleNavScreen} id="open-button">Menu</button>
 </div>
 
 <!-- NAVSCREEN (full screen, fixed position, toggled with open/close button) -->
-<NavScreen isOpen={navScreenIsOpen} toggleNavScreen={toggleNavScreen} />
+<NavScreen isOpen={navScreenIsOpen} {toggleNavScreen} />
 
 <style>
 	/* DESKTOP */
@@ -30,6 +32,7 @@
 		#mobile-menu-div {
 			display: flex;
 			justify-content: space-between;
+			background-color: var(--second-bg-colour);
 		}
 	}
 </style>

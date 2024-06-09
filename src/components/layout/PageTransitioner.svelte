@@ -8,7 +8,7 @@
 		top: 0;
 		left: 0;
 		z-index: 1000;
-		background-color: antiquewhite;
+		background-color: var(--bg-colour);
 		visibility: hidden;
 		opacity: 0;
 	}

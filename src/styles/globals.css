@@ -5,12 +5,14 @@
     --font-size-base: 16px;
     --font-size-large: 2rem;
     --font-family-base: 'Arial, sans-serif';
+    --h2-size: 2rem;
 
     /* Colors */
-    --color-primary: #007BFF;
-    --color-secondary: #6C757D;
-    --color-background: #F8F9FA;
-    --color-text: #343A40;
+    --text-colour: #DCDCDC;
+    --bg-colour: #333333;
+    --second-bg-colour: #36454F;
+    --light-shadow: #708090;
+    --splash-highlight: #00FFFF;
 
     /* Spacing */
     --spacing-small: 0.5rem;
@@ -25,6 +27,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--text-colour);
+    font-family: Oswald, sans-serif;
 }
 
 html,
@@ -39,3 +43,12 @@ html {
     font-size: var(--font-size-base);
 }
 
+h2 {
+    font-size: var(--h2-size);
+    color: white;
+}
+p {
+    font-size: 1.5rem;
+    line-height: 110%;
+    font-family: 'Lato', sans-serif;
+}
